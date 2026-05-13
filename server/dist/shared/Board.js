@@ -85,6 +85,24 @@ export class Board {
             // We'll keep hasMine true but mark it has a piece
             // Actually, the count_adjacent_mines logic in GML treats mines and pieces differently
         }
+        // Spawn White Pieces
+        const whiteLayout = [
+            ['Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn'],
+            ['Pawn', 'Bishop', 'Knight', 'Knight', 'Bishop', 'Pawn'],
+            ['Pawn', 'Knight', 'Rook', 'Queen', 'Knight', 'Pawn'],
+            ['Pawn', 'Knight', 'King', 'Rook', 'Knight', 'Pawn'],
+            ['Pawn', 'Bishop', 'Knight', 'Knight', 'Bishop', 'Pawn'],
+            ['Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn']
+        ];
+        const layoutSize = 6;
+        const startX = mid - Math.floor(layoutSize / 2);
+        const startY = mid - Math.floor(layoutSize / 2);
+        for (let lx = 0; lx < layoutSize; lx++) {
+            for (let ly = 0; ly < layoutSize; ly++) {
+                const type = whiteLayout[ly][lx]; // Note: layout is [row][col]
+                this.pieces.push(new Piece(type, 'White', startX + lx, startY + ly));
+            }
+        }
     }
     getPieceAt(x, y) {
         return this.pieces.find(p => p.gridX === x && p.gridY === y);
