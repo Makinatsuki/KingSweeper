@@ -2,8 +2,8 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // Set base to './' so it works on GitHub Pages subfolders
-  base: './',
+  // Set base to the repository name for GitHub Pages
+  base: '/KingSweeper/',
   build: {
     outDir: 'dist',
   },
