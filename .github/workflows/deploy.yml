@@ -15,9 +15,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install and Build
+        env:
+          VITE_SERVER_URL: https://kingsweeper.onrender.com # Replace with your actual Render URL
         run: |
           npm install
           npm run client:build
+
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
