@@ -1,0 +1,21 @@
+{
+  "name": "kingsweeper",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ],
+  "scripts": {
+    "client:dev": "npm run dev -w client",
+    "client:build": "npm run build -w client",
+    "server:dev": "npm run dev -w server",
+    "server:build": "npm run build -w server"
+  },
+  "devDependencies": {
+    "@vitest/ui": "^4.1.6",
+    "typescript": "^5.4.5",
+    "vitest": "^4.1.6"
+  }
+}
