@@ -17,6 +17,14 @@ export class Network {
             console.log('Connected to server');
         });
 
+        this.socket.on('connect_error', (err) => {
+            console.error('Connection error:', err.message);
+        });
+
+        this.socket.on('disconnect', (reason) => {
+            console.warn('Disconnected:', reason);
+        });
+
         this.socket.on('joined', (data: { roomId: string, color: Color }) => {
             this.roomId = data.roomId;
             this.playerColor = data.color;

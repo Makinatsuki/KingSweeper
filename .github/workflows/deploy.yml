@@ -16,7 +16,7 @@ jobs:
 
       - name: Install and Build
         env:
-          VITE_SERVER_URL: https://kingsweeper.onrender.com # Replace with your actual Render URL
+          VITE_SERVER_URL: https://kingsweeper.onrender.com
         run: |
           npm install
           npm run client:build
