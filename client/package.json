@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && npx vite build",
+    "dev": "node ../node_modules/vite/bin/vite.js",
+    "build": "tsc && node ../node_modules/vite/bin/vite.js build",
     "preview": "vite preview",
     "deploy": "npm run build"
   },
