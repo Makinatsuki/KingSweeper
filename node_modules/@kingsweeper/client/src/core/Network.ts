@@ -9,8 +9,9 @@ export class Network {
     public roomId: string | null = null;
 
     private constructor() {
-        // In production this would be the server URL, but for local dev with Vite proxy or direct port
-        this.socket = io('http://localhost:3000');
+        // Use environment variable for server URL, fallback to localhost for development
+        const serverUrl = import.meta.env.VITE_SERVER_URL || 'http://localhost:3000';
+        this.socket = io(serverUrl);
         
         this.socket.on('connect', () => {
             console.log('Connected to server');
