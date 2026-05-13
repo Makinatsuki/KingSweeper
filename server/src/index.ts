@@ -1,6 +1,6 @@
 import { Server } from 'socket.io';
 import { createServer } from 'http';
-import { RoomManager } from './RoomManager';
+import { RoomManager } from './RoomManager.js';
 
 const httpServer = createServer();
 const io = new Server(httpServer, {

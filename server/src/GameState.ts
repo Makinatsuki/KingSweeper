@@ -1,7 +1,7 @@
 import { Server, Socket } from 'socket.io';
-import { Board, BOARD_SIZE } from '../../shared/Board';
-import { Color } from '../../shared/Piece';
-import { CellState, MovePacket, SyncPacket } from '../../shared/types';
+import { Board, BOARD_SIZE } from '../../shared/Board.js';
+import { Color } from '../../shared/Piece.js';
+import { CellState, MovePacket, SyncPacket } from '../../shared/types.js';
 
 export class GameState {
     private roomId: string;

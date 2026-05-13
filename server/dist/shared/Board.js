@@ -1,5 +1,5 @@
-import { CellState } from './types';
-import { Piece } from './Piece';
+import { CellState } from './types.js';
+import { Piece } from './Piece.js';
 export const BOARD_SIZE = 32;
 export const MINE_DENSITY = 0.2;
 export class Board {

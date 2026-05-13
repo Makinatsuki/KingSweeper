@@ -1,6 +1,6 @@
 import { Server, Socket } from 'socket.io';
-import { GameState } from './GameState';
-import { Color } from '../../shared/Piece';
+import { GameState } from './GameState.js';
+import { Color } from '../../shared/Piece.js';
 
 interface Player {
     id: string;

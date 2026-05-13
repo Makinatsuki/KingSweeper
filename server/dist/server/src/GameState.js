@@ -1,5 +1,5 @@
-import { Board, BOARD_SIZE } from '../../shared/Board';
-import { CellState } from '../../shared/types';
+import { Board, BOARD_SIZE } from '../../shared/Board.js';
+import { CellState } from '../../shared/types.js';
 export class GameState {
     roomId;
     io;
