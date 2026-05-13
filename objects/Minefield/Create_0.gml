@@ -1,3 +1,5 @@
+randomise()
+
 // Enable and setup viewports
 view_enabled = true;
 view_visible[0] = true;
