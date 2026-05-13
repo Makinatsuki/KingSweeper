@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/server/src/index.js"
   },
   "dependencies": {
     "socket.io": "^4.7.5",

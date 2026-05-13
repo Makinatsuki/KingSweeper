@@ -1,5 +1,5 @@
-import { Vector2, SyncPacket, CellState } from './types';
-import { Piece, PieceType, Color } from './Piece';
+import { Vector2, SyncPacket, CellState } from './types.js';
+import { Piece, PieceType, Color } from './Piece.js';
 
 export const BOARD_SIZE = 32;
 export const MINE_DENSITY = 0.2;

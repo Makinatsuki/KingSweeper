@@ -1,4 +1,4 @@
-import { GameState } from './GameState';
+import { GameState } from './GameState.js';
 export class RoomManager {
     io;
     rooms = new Map();

@@ -16,7 +16,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm ci
+          npm install
           npm run client:build
 
       - name: Deploy
