@@ -1,5 +1,3 @@
-randomise()
-
 // Enable and setup viewports
 view_enabled = true;
 view_visible[0] = true;
@@ -96,6 +94,9 @@ for (var i = 0; i < array_length(minefield); i++)
 
 if mine_count < available_space - safe_tiles
 {
+    var _seed = date_current_datetime() * 10000;
+    random_set_seed(_seed);
+    show_debug_message("Seeding RNG with: " + string(_seed));
     while mine_count > 0
     {
         var row_idx = irandom_range(0, global.boardsize - 1)
