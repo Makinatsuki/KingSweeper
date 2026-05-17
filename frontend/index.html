@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingSweeper - Instructions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>KingSweeper</h1>
+        </header>
+
+        <main>
+            <section id="instructions">
+                <h2>How to Play</h2>
+                <p>KingSweeper is a logic puzzle game where you need to clear a grid without hitting any hidden mines.</p>
+                <ul>
+                    <li><strong>Left Click</strong>: Reveal a tile. If it's a mine, the game is over. If it's a number, it tells you how many mines are adjacent to that tile.</li>
+                    <li><strong>Right Click</strong>: Place a flag on a tile you suspect contains a mine.</li>
+                    <li><strong>Objective</strong>: Clear all tiles that do not contain mines.</li>
+                </ul>
+            </section>
+
+            <section id="game-container">
+                <iframe src="http://localhost:3000/game.html" id="game-iframe" title="KingSweeper Game View" width="512" height="512"></iframe>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 KingSweeper</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
